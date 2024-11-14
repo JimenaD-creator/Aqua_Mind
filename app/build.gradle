@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.aquamind"
-        minSdk 21
+        minSdk 23
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -51,7 +51,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.firebase:firebase-firestore'
     implementation 'com.google.firebase:firebase-messaging'
-    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    //implementation 'com.github.PhilJay:MPAndroidChart:v3.1.1'
+
 
 
 }

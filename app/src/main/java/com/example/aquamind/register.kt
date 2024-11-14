@@ -8,28 +8,22 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class login : AppCompatActivity() {
+class register : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_register)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val iniciar_sesion = (findViewById<Button>(R.id.btn_iniciar_sesion))
-        val registro = (findViewById<Button>(R.id.btn_registro))
+        var register = (findViewById<Button>(R.id.btn_register))
 
-        iniciar_sesion.setOnClickListener {
+        register.setOnClickListener {
             val act1 = Intent(this, options::class.java)
             startActivity(act1)
 
         }
-        registro.setOnClickListener{
-            val act2 = Intent(this, register::class.java)
-            startActivity(act2)
-        }
-
     }
 }
