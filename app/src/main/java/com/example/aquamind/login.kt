@@ -35,7 +35,6 @@ class login : AppCompatActivity() {
                     startActivity(act1)
                 }
             }
-
         }
         registro.setOnClickListener{
             val act2 = Intent(this, register::class.java)
