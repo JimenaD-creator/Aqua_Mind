@@ -3,6 +3,7 @@ package com.example.aquamind
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,10 +21,20 @@ class login : AppCompatActivity() {
         }
         val iniciar_sesion = (findViewById<Button>(R.id.btn_iniciar_sesion))
         val registro = (findViewById<Button>(R.id.btn_registro))
+        val email = (findViewById<EditText>(R.id.et_email))
+        val pass = (findViewById<EditText>(R.id.et_password))
 
         iniciar_sesion.setOnClickListener {
-            val act1 = Intent(this, options::class.java)
-            startActivity(act1)
+            if(email.text.isEmpty()){
+                email.error = "Favor de llenar el campo correspondiente"
+            }else {
+                if (pass.text.isEmpty()) {
+                    pass.error = "Favor de llenar el campo correspondiente"
+                } else {
+                    val act1 = Intent(this, options::class.java)
+                    startActivity(act1)
+                }
+            }
 
         }
         registro.setOnClickListener{
