@@ -8,6 +8,20 @@
     android:background="#0B1440"
     tools:context=".register">
 
+    <EditText
+        android:id="@+id/et_email2"
+        android:layout_width="265dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#E9E3E3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
     <ImageButton
         android:id="@+id/ib_google2"
         android:layout_width="wrap_content"
@@ -62,21 +76,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.405" />
-
-    <EditText
-        android:id="@+id/et_email2"
-        android:layout_width="260dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="text"
-        android:textColorHint="#E7E6E6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.515" />
 
     <Button
         android:id="@+id/btn_register"

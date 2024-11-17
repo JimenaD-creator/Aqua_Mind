@@ -20,21 +20,6 @@
         app:layout_constraintVertical_bias="0.135"
         app:srcCompat="@drawable/user" />
 
-    <EditText
-        android:id="@+id/et_email"
-        android:layout_width="260dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="text"
-        android:textColorHint="#E7E6E6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.412" />
-
     <Button
         android:id="@+id/btn_iniciar_sesion"
         android:layout_width="206dp"
@@ -99,5 +84,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="265dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#E9E3E3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
